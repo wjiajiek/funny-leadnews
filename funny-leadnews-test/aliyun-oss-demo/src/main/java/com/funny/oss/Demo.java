@@ -13,10 +13,10 @@ public class Demo {
 
     public static void main(String[] args) throws Exception {
         // Endpoint以华东1（杭州）为例，其它Region请按实际情况填写。
-        String endpoint = "https://oss-cn-guangzhou.aliyuncs.com";
+        String endpoint = "";
         // 阿里云账号AccessKey拥有所有API的访问权限，风险很高。强烈建议您创建并使用RAM用户进行API访问或日常运维，请登录RAM控制台创建RAM用户。
-        String accessKeyId = "LTAI5tMoi3sGuxorf33cX1P5";
-        String accessKeySecret = "xp8WAJz1YCn3rEZacUnImMnShetYfW";
+        String accessKeyId = "";
+        String accessKeySecret = "";
         // 填写Bucket名称，例如examplebucket。
         String bucketName = "natieganfan";
         // 填写Object完整路径，完整路径中不能包含Bucket名称，例如exampledir/exampleobject.txt。
