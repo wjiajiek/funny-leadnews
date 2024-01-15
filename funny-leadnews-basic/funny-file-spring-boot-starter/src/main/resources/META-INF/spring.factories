@@ -1,0 +1,2 @@
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
+ com.funny.file.service.impl.OSSAliyunFileStorageService,com.funny.file.service.impl.MinIOFileStorageService

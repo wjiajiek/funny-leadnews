@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <artifactId>funny-leadnews</artifactId>
+        <groupId>com.funny</groupId>
+        <version>1.0-SNAPSHOT</version>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+
+    <artifactId>funny-leadnews-services</artifactId>
+    <packaging>pom</packaging>
+    <modules>
+        <module>admin-service</module>
+        <module>user-service</module>
+        <module>wemedia-service</module>
+        <module>article-service</module>
+        <module>behavior-service</module>
+    </modules>
+
+
+    <dependencies>
+
+
+        <!-- 统一feign远程调用依赖 引入后可以直接注入feign接口-->
+        <dependency>
+            <artifactId>funny-leadnews-feign</artifactId>
+            <groupId>com.funny</groupId>
+            <version>1.0-SNAPSHOT</version>
+        </dependency>
+
+        <!-- nacos 注册中心  客户端依赖 -->
+        <dependency>
+            <groupId>com.alibaba.cloud</groupId>
+            <artifactId>spring-cloud-starter-alibaba-nacos-discovery</artifactId>
+        </dependency>
+
+
+        <!-- nacos 配置中心  客户端依赖 -->
+        <dependency>
+            <groupId>com.alibaba.cloud</groupId>
+            <artifactId>spring-cloud-starter-alibaba-nacos-config</artifactId>
+        </dependency>
+
+
+<!--        引入统一的异常处理依赖-->
+        <dependency>
+            <groupId>com.funny</groupId>
+            <artifactId>funny-exception-spring-boot-starter</artifactId>
+            <version>1.0-SNAPSHOT</version>
+        </dependency>
+
+<!--        引入统一的knife4j依赖-->
+        <dependency>
+            <groupId>com.funny</groupId>
+            <artifactId>funny-knife4j-spring-boot-starter</artifactId>
+            <version>1.0-SNAPSHOT</version>
+        </dependency>
+        <dependency>
+            <groupId>com.funny</groupId>
+            <artifactId>funny-leadnews-model</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.funny</groupId>
+            <artifactId>funny-leadnews-common</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.funny</groupId>
+            <artifactId>funny-leadnews-utils</artifactId>
+        </dependency>
+        <!-- Spring boot starter -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-web</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-test</artifactId>
+            <scope>test</scope>
+        </dependency>
+    </dependencies>
+
+
+</project>
